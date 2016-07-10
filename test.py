@@ -6,6 +6,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 
+
 def lambda_handler(event, context):
     # 이벤트 로그를 기록
     logger.info('got event{}'.format(event))
