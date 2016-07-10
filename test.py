@@ -5,7 +5,11 @@ import logging
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-
+"""
+Lambda > Functions > 내 함수 > Configuration > Handler 에서 input을
+[파일명.메소드명]으로 한다.
+예시 : lambda_function.lambda_handler
+"""
 
 def lambda_handler(event, context):
     # 이벤트 로그를 기록
@@ -23,8 +27,3 @@ def lambda_handler(event, context):
             }
         ]
     }
-"""
-Lambda > Functions > 내 함수 > Configuration > Handler 에서 input을
-[파일명.메소드명]으로 한다.
-예시 : lambda_function.lambda_handler
-"""
