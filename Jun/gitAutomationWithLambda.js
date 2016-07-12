@@ -1,16 +1,27 @@
+// 파일 시스템 모듈
 var fs = require('fs');
+// 왜 있는지 모르겠음
 var url = require('url');
 var https = require('https');
+// bash 사용
 var exec = require('child_process').exec;
+// 깃 명령어 및 연동
 var simpleGit = require('simple-git')();
+// zip 파일 사용
 var archiver = require('archiver');
+// 깃헙 토큰
 var token = '[Your GitHub OAuth Token]';
+// 파일 이름
 var file_name = './deploy';
+// 버전
 var version = '122632';
 exports.handler = function(event, context) {
+
     console.log('VERSION: ', version);
     console.log('start to download the ' + file_name + ' via github.');
+    // Remote URL 입력
     var remote_url = 'https://' + token + ':x-oauth-basic@github.com/[Your GitHub UserName]/[User GitHub Repo Url]';
+    //
     var proc = exec('cd /tmp; rm -rf ./' + file_name, function(error, stdout, stderr) {
         console.log('cleaning the deploy files are completed.');
         var proc = exec('yum -y install git', function(error, stdout, stderr) {
