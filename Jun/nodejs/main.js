@@ -1,4 +1,3 @@
-
 // test
 var http = require('http');
 
@@ -10,5 +9,4 @@ function helloResponse(req, res) {
     });
     res.end('Hello World\n');
 }
-
 server.listen(8000);
