@@ -21,7 +21,6 @@ exports.handler = function(event, context) {
     console.log('start to download the ' + file_name + ' via github.');
     // Remote URL 입력
     var remote_url = 'https://' + token + ':x-oauth-basic@github.com/[Your GitHub UserName]/[User GitHub Repo Url]';
-    // 프롬프트 실행
     var proc = exec('cd /tmp; rm -rf ./' + file_name, function(error, stdout, stderr) {
         console.log('cleaning the deploy files are completed.');
         var proc = exec('yum -y install git', function(error, stdout, stderr) {
