@@ -1,11 +1,3 @@
-{\rtf1\ansi\ansicpg949\cocoartf1404\cocoasubrtf470
-{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;}
-{\colortbl;\red255\green255\blue255;\red52\green52\blue52;\red236\green236\blue236;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
 # AWS Version 4 signing example\
 \
 # DynamoDB API (CreateTable)\
