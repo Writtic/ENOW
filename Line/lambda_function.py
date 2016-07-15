@@ -1,10 +1,10 @@
 #!/usr/bin/python
 #-*- encoding: utf-8 -*-
 # 로그를 기록하기 위한 메소드
+
 import logging
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
-
 """
 Lambda > Functions > 내 함수 > Configuration > Handler 에서 input을
 [파일명.메소드명]으로 한다.
