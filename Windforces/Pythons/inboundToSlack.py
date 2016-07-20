@@ -15,7 +15,7 @@ def lambda_handler(event, context):
         dictionary["username"] = element["id"]
         dictionary["text"] = element["selftext"]
 
-        request.post('https://hooks.slack.com/services/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',\
+        request.post('',\
         data = json.dumps(dictionary))
 
 
